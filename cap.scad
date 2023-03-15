@@ -1,0 +1,15 @@
+include <BOSL2/std.scad>
+
+// Units in mm
+
+$fa = 1;
+
+CAP_THICKNESS = 3;
+CAP_HEIGHT = 10;
+GARDYN_OPENING_EXTERNAL_DIAMETER = 56;
+
+difference() {
+  cyl(r=GARDYN_OPENING_EXTERNAL_DIAMETER + (CAP_THICKNESS * 2), l=CAP_HEIGHT);
+  down(CAP_THICKNESS)
+    cyl(r=GARDYN_OPENING_EXTERNAL_DIAMETER, l=CAP_HEIGHT);
+}
