@@ -4,8 +4,8 @@ use <cap.scad>
 $fa = 1;
 
 REFLECTIVE_COVER_OPENING = 20;
-GOOSE = 2;
-ALGAE_COVER_OPENING = REFLECTIVE_COVER_OPENING - (GOOSE * 2);
+GOOSE = 4;
+ALGAE_COVER_OPENING = REFLECTIVE_COVER_OPENING - GOOSE;
 
 module algae_cover() {
     difference() {
