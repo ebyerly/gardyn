@@ -48,8 +48,20 @@ module algae_cover(slop_percent = 0.01, anchor=CENTER, spin=0, orient=UP) {
   }
 }
 
+back(62)
 algae_cover(slop_percent=0.005)
     position(RIGHT)
     right(3)
     cap(slop_percent=0.005, anchor=LEFT);
+
+algae_cover(slop_percent=0.01)
+    position(RIGHT)
+    right(3)
+    cap(slop_percent=0.01, anchor=LEFT);
+
+fwd(62)
+algae_cover(slop_percent=0.025)
+    position(RIGHT)
+    right(3)
+    cap(slop_percent=0.025, anchor=LEFT);
 
